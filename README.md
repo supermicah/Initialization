@@ -1,2 +1,2 @@
-# Initialization
-Project Initialization
+# 项目初始化
+由于每次新建项目，需要拷贝很多内容，就导致重复工作比较打
