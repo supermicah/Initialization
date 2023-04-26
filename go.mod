@@ -1,6 +1,6 @@
-module github.com/supermicah/initialization
+module micah.wiki/initialization
 
-go 1.16
+go 1.18
 
 require (
 )
