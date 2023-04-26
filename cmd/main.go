@@ -1,6 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
-	print("bs")
-	print("second")
+	fmt.Println(1)
 }
