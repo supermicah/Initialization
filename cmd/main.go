@@ -1,7 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"runtime/trace"
+)
 
 func main() {
-	fmt.Println(1)
+	f, err := os.Create("trace.out")
+	if err != nil {
+		panic(err)
+	}
+
+	defer func() {
+		_ = f.Close()
+	}()
+
+	err = trace.Start(f)
+	if err != nil {
+		panic(err)
+	}
+	defer trace.Stop()
+
+	fmt.Println("Hello World")
 }
