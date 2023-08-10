@@ -17,4 +17,8 @@ func main() {
 	do3d3()
 	fmt.Println("******")
 	do3d3p()
+	fmt.Println("******")
+	do3d4()
+	fmt.Println("******")
+	do4d1()
 }
